@@ -1,0 +1,4 @@
+package kotlinf
+
+fun main() {
+}
