@@ -1,11 +1,8 @@
 package javaf.pws.thirdPW;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class FifthTask {
-    private static final Scanner scanner = new Scanner(System.in);
-
     public static void main(String[] args) {
         String s = """
             alex smith 5 5 5

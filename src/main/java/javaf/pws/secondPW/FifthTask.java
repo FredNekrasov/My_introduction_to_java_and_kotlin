@@ -4,8 +4,8 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class FifthTask {
-    private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
         try{
             System.out.println("Enter something");
             String string = scanner.nextLine();
