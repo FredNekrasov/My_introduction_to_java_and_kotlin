@@ -19,10 +19,9 @@ open class Database : IOperations {
         practicalWorks[index] = pw
         return "The record has been updated"
     }
-    override fun <T> findByField(field: (PracticalWork) -> T, value: T): List<PracticalWork> {
-        return practicalWorks.filter { field(it) == value }.toList()
-    }
-    override fun <T : Comparable<T>> sortByField(field: (PracticalWork) -> T): List<PracticalWork> {
-        return practicalWorks.sortedBy(field).toList()
-    }
+    override fun <T> findByField(
+        field: (PracticalWork) -> T,
+        value: T
+    ): List<PracticalWork> = practicalWorks.filter { field(it) == value }.toList()
+    override fun <T : Comparable<T>> sortByField(field: (PracticalWork) -> T): List<PracticalWork> = practicalWorks.sortedBy(field).toList()
 }

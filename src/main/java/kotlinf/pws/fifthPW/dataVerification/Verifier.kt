@@ -3,7 +3,7 @@ package kotlinf.pws.fifthPW.dataVerification
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
-class Verifier: CheckData {
+class Verifier : CheckData {
     override fun checkString(inf: String?): String? {
         return if (!inf.isNullOrEmpty() && inf.isNotBlank()) inf else null
     }
